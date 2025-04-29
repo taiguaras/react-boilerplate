@@ -9,9 +9,9 @@ function App() {
   return (
     <Provider store={store}>
       <div className="min-h-screen bg-gray-100">
-        <header className="bg-blue-500 shadow">
+        <header className="bg-gray-800 shadow">
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold text-gray-900">Boilerplate</h1>
+            <h1 className="text-3xl font-bold text-gray-100">Boilerplate</h1>
             <p className="text-gray-500">Redux, Tailwind, Vite, React, Tests</p>
           </div>
         </header>
@@ -19,7 +19,7 @@ function App() {
           <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
             <h1>Vite + React</h1>
             <div className="card">
-              <button onClick={() => setCount((count) => count + 1)}>
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md" onClick={() => setCount((count) => count + 1)}>
                 count is {count}
               </button>
               <p>
