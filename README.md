@@ -1,54 +1,107 @@
-# React + TypeScript + Vite
+# React E-commerce Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce application built with React, TypeScript, and Vite. This project includes a robust setup with state management, styling, testing, and code quality tools.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ **Fast Development**: Built with Vite for optimal development experience
+- 🎨 **Modern UI**: Styled with Tailwind CSS
+- 🔄 **State Management**: Redux Toolkit for predictable state management
+- 🧪 **Testing**: Vitest and React Testing Library for comprehensive testing
+- 📝 **Type Safety**: TypeScript for better developer experience
+- ✨ **Code Quality**: ESLint with modern flat config for code quality
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Redux Toolkit
+- Vitest
+- React Testing Library
+- ESLint
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd react-ecomm
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+## 🚀 Development
+
+Start the development server:
+```bash
+npm run dev
+```
+
+## 🏗️ Build
+
+Build the application for production:
+```bash
+npm run build
+```
+
+## 🧪 Testing
+
+Run tests:
+```bash
+npm run test
+```
+
+Generate test coverage report:
+```bash
+npm run test:coverage
+```
+
+## 📝 Code Quality
+
+Check code quality:
+```bash
+npm run lint
+```
+
+Automatically fix linting issues:
+```bash
+npm run lint:fix
+```
+
+## 📁 Project Structure
+
+```
+src/
+  ├── App.tsx           # Main application component
+  ├── store/            # Redux store configuration
+  │   └── store.ts
+  ├── test/             # Test setup
+  │   └── setup.ts
+  ├── App.test.tsx      # Sample test file
+  └── main.tsx          # Application entry point
+```
+
+## 🔧 Configuration Files
+
+- `vite.config.ts` - Vite configuration
+- `vitest.config.ts` - Vitest configuration
+- `eslint.config.js` - ESLint configuration (flat config)
+- `tailwind.config.cjs` - Tailwind CSS configuration
+- `postcss.config.cjs` - PostCSS configuration
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
