@@ -103,9 +103,9 @@ If you need to set up Tailwind CSS in a new Vite + React project, follow these s
 npm install -D tailwindcss@3.3.0 postcss@8.4.31 autoprefixer@10.4.16
 ```
 
-2. Create or update `postcss.config.cjs`:
+2. Create or update `postcss.config.js`:
 ```javascript
-module.exports = {
+export default {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},

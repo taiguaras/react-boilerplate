@@ -1,22 +1,78 @@
 import { Link } from 'react-router-dom';
 import CartIcon from './CartIcon';
+import { theme } from '../theme/theme';
 
 function Header() {
   return (
-    <header className="bg-gray-800 shadow">
-      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
-          <div>
-            <h1 className="text-3xl font-bold text-gray-100">Boilerplate</h1>
-            <p className="text-gray-500">Redux, Tailwind, Vite, React, Tests</p>
-          </div>
-          <nav className="flex items-center gap-4">
-            <Link to="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-            <Link to="/products" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products</Link>
-            <Link to="/redux-test" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Redux Test</Link>
-            <CartIcon />
-          </nav>
+    <header style={{ 
+      backgroundColor: theme.colors.background.dark,
+      boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)'
+    }}>
+      <div style={{ 
+        maxWidth: '80rem',
+        margin: '0 auto',
+        padding: '1.5rem 1rem',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      }}>
+        <div>
+          <h1 style={{ 
+            color: theme.colors.text.primary,
+            fontSize: '1.875rem',
+            fontWeight: 'bold'
+          }}>
+            Boilerplate
+          </h1>
+          <p style={{ 
+            color: theme.colors.text.secondary
+          }}>
+            Redux, Tailwind, Vite, React, Tests
+          </p>
         </div>
+        <nav style={{ 
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1rem'
+        }}>
+          <Link 
+            to="/" 
+            style={{ 
+              color: theme.colors.text.secondary,
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              fontWeight: '500'
+            }}
+          >
+            Home
+          </Link>
+          <Link 
+            to="/products" 
+            style={{ 
+              color: theme.colors.text.secondary,
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              fontWeight: '500'
+            }}
+          >
+            Products
+          </Link>
+          <Link 
+            to="/redux-test" 
+            style={{ 
+              color: theme.colors.text.secondary,
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              fontWeight: '500'
+            }}
+          >
+            Redux Test
+          </Link>
+          <CartIcon />
+        </nav>
       </div>
     </header>
   );
