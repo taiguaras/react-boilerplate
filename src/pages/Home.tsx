@@ -3,6 +3,7 @@ import { selectAllProducts } from '../store/features/productsSlice';
 import ProductList from '../components/ProductList';
 import ReasonsToBelieve from '../components/ReasonsToBelieve';
 import ReviewsCarousel from '../components/ReviewsCarousel';
+import ContactForm from '../components/ContactForm';
 
 function Home() {
   const products = useSelector(selectAllProducts);
@@ -33,6 +34,9 @@ function Home() {
 
       {/* Reviews Section */}
       <ReviewsCarousel />
+
+      {/* Contact Form Section */}
+      <ContactForm />
     </div>
   );
 }

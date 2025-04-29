@@ -7,14 +7,15 @@ import Cart from './pages/Cart';
 import Products from './pages/Products';
 import Home from './pages/Home';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-gray-100 flex flex-col">
           <Header />
-          <main>
+          <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/redux-test" element={<ReduxTest />} />
@@ -22,6 +23,7 @@ function App() {
               <Route path="/products" element={<Products />} />
             </Routes>
           </main>
+          <Footer />
         </div>
       </Router>
     </Provider>
