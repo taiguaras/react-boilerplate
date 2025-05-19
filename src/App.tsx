@@ -10,6 +10,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SignIn from './pages/auth/SignIn';
 import TaskBoard from './components/TaskBoard';
+import Posts from './pages/Posts';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/signin" element={<SignIn />} />
               <Route path="/task-board" element={<TaskBoard />} />
+              <Route path="/posts" element={<Posts />} />
             </Routes>
           </main>
           <Footer />
