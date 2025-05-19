@@ -71,7 +71,19 @@ function Header() {
           >
             Redux Test
           </Link>
-          <CartIcon />
+          <Link
+            to="/task-board"
+            style={{
+              color: theme.colors.text.secondary,
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              fontWeight: '500'
+            }}
+          >
+            Task Board
+          </Link>
+            <CartIcon />
         </nav>
       </div>
     </header>

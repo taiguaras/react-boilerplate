@@ -8,6 +8,8 @@ import Products from './pages/Products';
 import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SignIn from './pages/auth/SignIn';
+import TaskBoard from './components/TaskBoard';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
               <Route path="/redux-test" element={<ReduxTest />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/signin" element={<SignIn />} />
+              <Route path="/task-board" element={<TaskBoard />} />
             </Routes>
           </main>
           <Footer />
