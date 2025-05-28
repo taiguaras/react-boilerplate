@@ -11,6 +11,9 @@ import Footer from './components/Footer';
 import SignIn from './pages/auth/SignIn';
 import TaskBoard from './components/TaskBoard';
 import Posts from './pages/Posts';
+import Form from './pages/Form';
+import Results from './pages/Results';
+import Crud from './pages/Crud';
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
               <Route path="/signin" element={<SignIn />} />
               <Route path="/task-board" element={<TaskBoard />} />
               <Route path="/posts" element={<Posts />} />
+              <Route path="/form" element={<Form />} />
+              <Route path="/results" element={<Results />} />
+              <Route path="/crud" element={<Crud />} />
             </Routes>
           </main>
           <Footer />

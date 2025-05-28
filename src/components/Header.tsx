@@ -33,7 +33,8 @@ function Header() {
         <nav style={{ 
           display: 'flex',
           alignItems: 'center',
-          gap: '1rem'
+          gap: '1rem',
+          flexWrap: 'wrap'
         }}>
           <Link 
             to="/" 
@@ -94,6 +95,42 @@ function Header() {
             }}
           >
             Posts
+          </Link>
+          <Link
+            to="/form"
+            style={{
+              color: theme.colors.text.secondary,
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              fontWeight: '500'
+            }}
+          >
+            Contact Form
+          </Link>
+          <Link
+            to="/results"
+            style={{
+              color: theme.colors.text.secondary,
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              fontWeight: '500'
+            }}
+          >
+            API Results
+          </Link>
+          <Link
+            to="/crud"
+            style={{
+              color: theme.colors.text.secondary,
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.375rem',
+              fontSize: '0.875rem',
+              fontWeight: '500'
+            }}
+          >
+            Student CRUD
           </Link>
           <CartIcon />
         </nav>
